@@ -1,0 +1,45 @@
+Histogram:  
+plt.hist( column_name, bins=10, color='skyblue' )
+df['col1'].hist(bins=10, figsize=(10,6)) 
+
+Dot Plot: 
+sns.stripplot(x='col1', y='col2', data=df, jitter=True)
+
+Bar Plot: 
+df['col1'].value_counts().plot(kind='bar')
+
+Line Charts: 
+plt.plot(df['col1'] , color='red')
+
+Multivariate Analysis:
+sns.scatterplot(x='col1', y='col2', data=df)
+---------------------------------------------------------
+Pie Charts:
+df['col1'].value_counts().plot(kind='pie', autopct='%1.1f%%', colors=['lightblue','lightpink'])
+
+Box Plot: 
+sns.boxplot(x='col1', y='col2', data=df)
+
+Scatter Plot:
+sns.scatterplot(x='col1', y='col2', data=df)
+
+
+plt.figure(figsize=(8,6))
+statement
+plt.xlabel("dsdf")
+plt.ylabel("ddff")
+plt.title(""sdfsdfsfs"")
+plt.show()
+
+
+
+
+for confusion matrix
+
+from sklearn.metrics import confusion_matrix
+import seaborn as sns
+
+conf=confusion_matrix(y_test,y_pred_nb)
+
+conf
+sns.heatmap(conf,annot=True,cmap='coolwarm')
